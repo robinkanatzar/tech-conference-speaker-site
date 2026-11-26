@@ -9,7 +9,7 @@ Plain HTML, no build step. Every page uses `styles.css` and `fonts/`.
 | Home | `/` | hero, three entry points, how it works, what a mentor helps with, questions, Robin |
 | Get a mentor | `/speakers/` | form for speakers: talk idea, talk, conference |
 | Be a mentor | `/mentors/` | form for volunteer mentors |
-| For conferences | `/conferences/` | form for organizers who want a mentoring or diversity program |
+| For conferences | `/conferences/` | form for organizers who want a mentoring program for their first-time speakers |
 | About | `/about/` | Robin, the Tech Talks book, contact links |
 
 ## How the forms work
@@ -29,6 +29,7 @@ Edit `TABS` or `FOOTER` in `tools/site.py`, then run `python3 tools/site.py`. It
 - `CNAME`: custom domain for GitHub Pages
 - `.nojekyll`: serve the files as they are
 - `assets/mic.svg`: the logo (white on transparent, used as a CSS mask so it follows light and dark mode)
+- `assets/tech-talks-cover.jpg`: the Tech Talks book cover (from the Gumroad listing), shown wherever the book is mentioned (`.book-split` and `.book-cover` in `styles.css`)
 - `fonts/`: Atkinson Hyperlegible Next (SIL Open Font License, see `fonts/OFL.txt`)
 
 ## Accessibility notes

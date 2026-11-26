@@ -156,6 +156,12 @@ details p { margin-top: 0.25rem; }
 .about-split { display: grid; gap: 1.5rem 2.5rem; align-items: start; }
 @media (min-width: 48rem) { .about-split { grid-template-columns: auto 1fr; } }
 .portrait { width: 12rem; height: 12rem; max-width: 100%; border-radius: 50%; object-fit: cover; background: var(--mist); }
+.book-split { display: grid; gap: 1.5rem 2.5rem; align-items: center; }
+@media (min-width: 36rem) { .book-split { grid-template-columns: auto 1fr; } }
+.book-split h2 { margin-top: 0; }
+.book-cover { width: 10rem; height: auto; max-width: 100%; border-radius: 6px; border: 1px solid var(--line); box-shadow: 0 6px 18px rgb(20 33 61 / 0.18); }
+details .book-split { margin-top: 0.75rem; }
+details .book-cover { width: 7rem; }
 .connect-links { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .connect-links a { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0.4rem 1.1rem;
   border: 2px solid var(--line); border-radius: 999px; text-decoration: none; color: var(--ink); font-weight: 700; }
