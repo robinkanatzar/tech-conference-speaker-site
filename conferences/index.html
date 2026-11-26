@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A mentoring program for your conference | Tech Conference Speaker</title>
+<meta name="description" content="Run a developer conference? Ask for a mentoring or diversity program that pairs your new speakers with experienced ones before the event.">
+<link rel="canonical" href="https://techconferencespeaker.com/conferences/">
+<meta property="og:title" content="A mentoring program for your conference | Tech Conference Speaker">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tech Conference Speaker">
+<meta property="og:url" content="https://techconferencespeaker.com/conferences/">
+<meta property="og:description" content="Run a developer conference? Ask for a mentoring or diversity program that pairs your new speakers with experienced ones before the event.">
+<link rel="preload" href="/fonts/atkinson-hyperlegible-next-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Tech Conference Speaker</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="/speakers/">Get a mentor</a></li>
+        <li><a href="/mentors/">Be a mentor</a></li>
+        <li><a href="/conferences/" aria-current="page">For conferences</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head" aria-labelledby="page-title">
+  <div class="wrap">
+    <h1 id="page-title">A mentoring program for your conference's speakers</h1>
+    <p class="lede">For people who run developer conferences. Pair your new speakers with experienced ones in the weeks before your event.</p>
+  </div>
+</section>
+
+<section aria-labelledby="what">
+  <div class="wrap">
+    <h2 id="what">What I can set up</h2>
+    <ul class="plain-list">
+      <li><strong>A mentoring program for new speakers.</strong> Each first-time speaker you accept gets a mentor who helps them prepare, from the structure of the talk to a practice run.</li>
+      <li><strong>A diversity program.</strong> Mentoring for speakers from groups you'd like to see more of on your stage, starting before your call for papers closes if you want it to.</li>
+    </ul>
+    <p>Every conference is different, so tell me about yours and what you have in mind. I'll reply by email and we can work out the details together.</p>
+  </div>
+</section>
+
+<section class="tinted" aria-labelledby="request">
+  <div class="wrap">
+    <h2 id="request">Ask for a program</h2>
+    <p>Only your name and your conference's name are required.</p>
+    <form class="form" action="mailto:hello@robinkanatzar.com?subject=A%20mentoring%20program%20for%20our%20conference" method="post" enctype="text/plain" data-mailto="hello@robinkanatzar.com" data-subject="A mentoring program for our conference">
+      <div class="field" data-q="Name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" maxlength="200" autocomplete="name" required>
+      </div>
+      <div class="field" data-q="Conference">
+        <label for="conference">Conference name</label>
+        <input type="text" id="conference" name="conference" maxlength="200" autocomplete="organization" required>
+      </div>
+      <div class="field" data-q="Website">
+        <label for="website">Conference website <span class="optional">(optional)</span></label>
+        <span class="hint" id="website-hint">For example: https://example.com</span>
+        <input type="url" id="website" name="website" maxlength="200" autocomplete="url" aria-describedby="website-hint">
+      </div>
+      <div class="field" data-q="When is it?">
+        <label for="dates">When is it? <span class="optional">(optional)</span></label>
+        <span class="hint" id="dates-hint">The dates, and when your call for papers closes if it's still open.</span>
+        <input type="text" id="dates" name="dates" maxlength="200" aria-describedby="dates-hint">
+      </div>
+      <fieldset class="field" data-q="What are you looking for?">
+        <legend>What are you looking for? <span class="optional">(choose any)</span></legend>
+        <div class="choice"><input type="checkbox" id="program-1" name="program" value="A mentoring program for our new speakers"><label for="program-1">A mentoring program for our new speakers</label></div>
+        <div class="choice"><input type="checkbox" id="program-2" name="program" value="A diversity program"><label for="program-2">A diversity program</label></div>
+        <div class="choice"><input type="checkbox" id="program-3" name="program" value="Something else"><label for="program-3">Something else</label></div>
+      </fieldset>
+      <div class="field" data-q="How many speakers?">
+        <label for="count">Roughly how many speakers would take part? <span class="optional">(optional)</span></label>
+        <input type="text" id="count" name="count" maxlength="200">
+      </div>
+      <div class="field" data-q="More details">
+        <label for="more">Tell me more <span class="optional">(optional)</span></label>
+        <textarea id="more" name="more" rows="4" maxlength="600"></textarea>
+      </div>
+      <button class="button" type="submit">Create my email</button>
+      <p class="fine">This opens an email to me in your email app, with your answers filled in. Nothing is sent until you press send, and this site stores nothing.</p>
+    </form>
+    <div class="form-result form" id="form-result" tabindex="-1" role="group" aria-labelledby="form-result-title" hidden>
+      <h3 id="form-result-title">Your email is ready</h3>
+      <p>Your email app should have opened with your answers. Press send there and I'll reply as soon as I can.</p>
+      <p>Nothing opened? Copy your answers below and email them to <a href="mailto:hello@robinkanatzar.com">hello@robinkanatzar.com</a>.</p>
+      <label class="sr-only" for="form-output">Your answers</label>
+      <textarea id="form-output" readonly></textarea>
+      <div class="actions"><button class="button secondary small" type="button" id="form-copy">Copy my answers</button></div>
+      <p class="fine" id="form-copied" role="status"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="mailto:hello@robinkanatzar.com">Contact<span class="sr-only"> (opens your email app)</span></a></li>
+    </ul>
+    <p>© 2026 Robin Kanatzar. This site uses no cookies and no trackers. Typeface: Atkinson Hyperlegible Next, by the Braille Institute.</p>
+  </div>
+</footer>
+<script src="/assets/form.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get a mentor for your talk | Tech Conference Speaker</title>
+<meta name="description" content="iOS developer with a talk coming up, or an idea you're not sure about? Ask for a volunteer mentor who has spoken at conferences before. Free.">
+<link rel="canonical" href="https://techconferencespeaker.com/speakers/">
+<meta property="og:title" content="Get a mentor for your talk | Tech Conference Speaker">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tech Conference Speaker">
+<meta property="og:url" content="https://techconferencespeaker.com/speakers/">
+<meta property="og:description" content="iOS developer with a talk coming up, or an idea you're not sure about? Ask for a volunteer mentor who has spoken at conferences before. Free.">
+<link rel="preload" href="/fonts/atkinson-hyperlegible-next-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Tech Conference Speaker</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="/speakers/" aria-current="page">Get a mentor</a></li>
+        <li><a href="/mentors/">Be a mentor</a></li>
+        <li><a href="/conferences/">For conferences</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head" aria-labelledby="page-title">
+  <div class="wrap">
+    <h1 id="page-title">Get a mentor for your talk</h1>
+    <p class="lede">For iOS developers who want to speak at a developer conference. Free, and open to first-time speakers and experienced ones.</p>
+  </div>
+</section>
+
+<section aria-labelledby="what">
+  <div class="wrap">
+    <h2 id="what">What you get</h2>
+    <p>I pair you with a volunteer mentor: someone who has given conference talks and wants to help you give yours. You can ask for help with any of this:</p>
+    <ul class="plain-list">
+      <li>Finding a talk idea</li>
+      <li>Writing a proposal for a call for papers (CFP)</li>
+      <li>Choosing which conferences to apply to</li>
+      <li>Structuring the talk and its story</li>
+      <li>Slides and live demos</li>
+      <li>Rehearsing, delivery and nerves</li>
+      <li>Preparing for questions from the audience</li>
+    </ul>
+    <p>You don't need a finished talk, an accepted proposal or even an idea to ask.</p>
+  </div>
+</section>
+
+<section class="tinted" aria-labelledby="ask">
+  <div class="wrap">
+    <h2 id="ask">Ask for a mentor</h2>
+    <p>Answer what you can. Only your name and the first question are required.</p>
+    <form class="form" action="mailto:hello@robinkanatzar.com?subject=I%27d%20like%20a%20speaking%20mentor" method="post" enctype="text/plain" data-mailto="hello@robinkanatzar.com" data-subject="I'd like a speaking mentor">
+      <div class="field" data-q="Name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" maxlength="200" autocomplete="name" required>
+      </div>
+      <fieldset class="field" data-q="Do you have a talk idea?">
+        <legend>Do you have a talk idea?</legend>
+        <div class="choice"><input type="radio" id="idea-1" name="idea" value="Yes, I have an idea" required><label for="idea-1">Yes, I have an idea</label></div>
+        <div class="choice"><input type="radio" id="idea-2" name="idea" value="Not yet, I'd like help finding one" required><label for="idea-2">Not yet, I'd like help finding one</label></div>
+        <div class="choice"><input type="radio" id="idea-3" name="idea" value="Yes, and my talk has been accepted" required><label for="idea-3">Yes, and my talk has been accepted</label></div>
+      </fieldset>
+      <div class="field" data-q="What is your talk about?">
+        <label for="talk">What is your talk about? <span class="optional">(optional)</span></label>
+        <span class="hint" id="talk-hint">A title or a couple of sentences is enough. Skip this if you don't have an idea yet.</span>
+        <textarea id="talk" name="talk" rows="4" maxlength="600" aria-describedby="talk-hint"></textarea>
+      </div>
+      <div class="field" data-q="Which conference?">
+        <label for="conference">Which conference are you speaking at, or hoping to speak at? <span class="optional">(optional)</span></label>
+        <span class="hint" id="conference-hint">Include the date if you know it. It's fine if you haven't chosen one yet.</span>
+        <input type="text" id="conference" name="conference" maxlength="200" aria-describedby="conference-hint">
+      </div>
+      <div class="field" data-q="What would you like help with?">
+        <label for="help">What would you like help with? <span class="optional">(optional)</span></label>
+        <textarea id="help" name="help" rows="4" maxlength="600"></textarea>
+      </div>
+      <button class="button" type="submit">Create my email</button>
+      <p class="fine">This opens an email to me in your email app, with your answers filled in. Nothing is sent until you press send, and this site stores nothing.</p>
+    </form>
+    <div class="form-result form" id="form-result" tabindex="-1" role="group" aria-labelledby="form-result-title" hidden>
+      <h3 id="form-result-title">Your email is ready</h3>
+      <p>Your email app should have opened with your answers. Press send there and I'll reply as soon as I can.</p>
+      <p>Nothing opened? Copy your answers below and email them to <a href="mailto:hello@robinkanatzar.com">hello@robinkanatzar.com</a>.</p>
+      <label class="sr-only" for="form-output">Your answers</label>
+      <textarea id="form-output" readonly></textarea>
+      <div class="actions"><button class="button secondary small" type="button" id="form-copy">Copy my answers</button></div>
+      <p class="fine" id="form-copied" role="status"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="mailto:hello@robinkanatzar.com">Contact<span class="sr-only"> (opens your email app)</span></a></li>
+    </ul>
+    <p>© 2026 Robin Kanatzar. This site uses no cookies and no trackers. Typeface: Atkinson Hyperlegible Next, by the Braille Institute.</p>
+  </div>
+</footer>
+<script src="/assets/form.js" defer></script>
+</body>
+</html>
