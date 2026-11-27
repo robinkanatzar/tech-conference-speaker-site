@@ -54,12 +54,12 @@
     <p>Only your name and where you've spoken are required.</p>
     <form class="form" action="mailto:hello@robinkanatzar.com?subject=I%27d%20like%20to%20mentor%20a%20speaker" method="post" enctype="text/plain" data-mailto="hello@robinkanatzar.com" data-subject="I'd like to mentor a speaker">
       <div class="field" data-q="Name">
-        <label for="name">Your name</label>
+        <label for="name">Your name <span class="optional">(required)</span></label>
         <input type="text" id="name" name="name" maxlength="200" autocomplete="name" required>
       </div>
       <div class="field" data-q="Where have you spoken?">
-        <label for="spoken">Where have you spoken?</label>
-        <span class="hint" id="spoken-hint">Conferences or meetups, and what your talks were about.</span>
+        <label for="spoken">Where have you spoken? <span class="optional">(required)</span></label>
+        <span class="hint" id="spoken-hint">Conferences or meetups, and what your talks were about. Up to 600 characters.</span>
         <textarea id="spoken" name="spoken" rows="4" maxlength="600" aria-describedby="spoken-hint" required></textarea>
       </div>
       <fieldset class="field" data-q="What can you help with?">
@@ -78,7 +78,8 @@
       </div>
       <div class="field" data-q="Anything else?">
         <label for="more">Anything else I should know? <span class="optional">(optional)</span></label>
-        <textarea id="more" name="more" rows="4" maxlength="600"></textarea>
+        <span class="hint" id="more-hint">Up to 600 characters.</span>
+        <textarea id="more" name="more" rows="4" maxlength="600" aria-describedby="more-hint"></textarea>
       </div>
       <button class="button" type="submit">Create my email</button>
       <p class="fine">This opens an email to me in your email app, with your answers filled in. Nothing is sent until you press send, and this site stores nothing.</p>

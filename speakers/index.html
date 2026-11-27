@@ -63,18 +63,18 @@
     <p>Answer what you can. Only your name and the first question are required.</p>
     <form class="form" action="mailto:hello@robinkanatzar.com?subject=I%27d%20like%20a%20speaking%20mentor" method="post" enctype="text/plain" data-mailto="hello@robinkanatzar.com" data-subject="I'd like a speaking mentor">
       <div class="field" data-q="Name">
-        <label for="name">Your name</label>
+        <label for="name">Your name <span class="optional">(required)</span></label>
         <input type="text" id="name" name="name" maxlength="200" autocomplete="name" required>
       </div>
       <fieldset class="field" data-q="Do you have a talk idea?">
-        <legend>Do you have a talk idea?</legend>
+        <legend>Do you have a talk idea? <span class="optional">(required)</span></legend>
         <div class="choice"><input type="radio" id="idea-1" name="idea" value="Yes, I have an idea" required><label for="idea-1">Yes, I have an idea</label></div>
         <div class="choice"><input type="radio" id="idea-2" name="idea" value="Not yet, I'd like help finding one" required><label for="idea-2">Not yet, I'd like help finding one</label></div>
         <div class="choice"><input type="radio" id="idea-3" name="idea" value="Yes, and my talk has been accepted" required><label for="idea-3">Yes, and my talk has been accepted</label></div>
       </fieldset>
       <div class="field" data-q="What is your talk about?">
         <label for="talk">What is your talk about? <span class="optional">(optional)</span></label>
-        <span class="hint" id="talk-hint">A title or a couple of sentences is enough. Skip this if you don't have an idea yet.</span>
+        <span class="hint" id="talk-hint">A title or a couple of sentences is enough. Skip this if you don't have an idea yet. Up to 600 characters.</span>
         <textarea id="talk" name="talk" rows="4" maxlength="600" aria-describedby="talk-hint"></textarea>
       </div>
       <div class="field" data-q="Which conference?">
@@ -84,7 +84,8 @@
       </div>
       <div class="field" data-q="What would you like help with?">
         <label for="help">What would you like help with? <span class="optional">(optional)</span></label>
-        <textarea id="help" name="help" rows="4" maxlength="600"></textarea>
+        <span class="hint" id="help-hint">Up to 600 characters.</span>
+        <textarea id="help" name="help" rows="4" maxlength="600" aria-describedby="help-hint"></textarea>
       </div>
       <button class="button" type="submit">Create my email</button>
       <p class="fine">This opens an email to me in your email app, with your answers filled in. Nothing is sent until you press send, and this site stores nothing.</p>

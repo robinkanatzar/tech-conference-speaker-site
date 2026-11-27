@@ -54,12 +54,12 @@
     <p>Only your name and your conference's name are required.</p>
     <form class="form" action="mailto:hello@robinkanatzar.com?subject=A%20mentoring%20program%20for%20our%20conference" method="post" enctype="text/plain" data-mailto="hello@robinkanatzar.com" data-subject="A mentoring program for our conference">
       <div class="field" data-q="Name">
-        <label for="name">Your name</label>
+        <label for="name">Your name <span class="optional">(required)</span></label>
         <input type="text" id="name" name="name" maxlength="200" autocomplete="name" required>
       </div>
       <div class="field" data-q="Conference">
-        <label for="conference">Conference name</label>
-        <input type="text" id="conference" name="conference" maxlength="200" autocomplete="organization" required>
+        <label for="conference">Conference name <span class="optional">(required)</span></label>
+        <input type="text" id="conference" name="conference" maxlength="200" required>
       </div>
       <div class="field" data-q="Website">
         <label for="website">Conference website <span class="optional">(optional)</span></label>
@@ -82,7 +82,8 @@
       </div>
       <div class="field" data-q="More details">
         <label for="more">Tell me more <span class="optional">(optional)</span></label>
-        <textarea id="more" name="more" rows="4" maxlength="600"></textarea>
+        <span class="hint" id="more-hint">Up to 600 characters.</span>
+        <textarea id="more" name="more" rows="4" maxlength="600" aria-describedby="more-hint"></textarea>
       </div>
       <button class="button" type="submit">Create my email</button>
       <p class="fine">This opens an email to me in your email app, with your answers filled in. Nothing is sent until you press send, and this site stores nothing.</p>
