@@ -30,6 +30,7 @@ FOOTER = f"""<footer class="site-footer">
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about/">About</a></li>
+      <li><a href="/accessibility/">Accessibility</a></li>
       <li><a href="mailto:{EMAIL}">Contact<span class="sr-only"> (opens your email app)</span></a></li>
     </ul>
     <p>© 2026 Robin Kanatzar. This site uses no cookies and no trackers. Typeface: Atkinson Hyperlegible Next, by the Braille Institute.</p>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility | Tech Conference Speaker</title>
+<meta name="description" content="How techconferencespeaker.com is built and tested for accessibility, and how to report a problem.">
+<link rel="canonical" href="https://techconferencespeaker.com/accessibility/">
+<meta property="og:title" content="Accessibility | Tech Conference Speaker">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tech Conference Speaker">
+<meta property="og:url" content="https://techconferencespeaker.com/accessibility/">
+<meta property="og:description" content="How techconferencespeaker.com is built and tested for accessibility, and how to report a problem.">
+<link rel="preload" href="/fonts/atkinson-hyperlegible-next-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Tech Conference Speaker</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="/speakers/">Get a mentor</a></li>
+        <li><a href="/mentors/">Be a mentor</a></li>
+        <li><a href="/conferences/">For conferences</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head" aria-labelledby="page-title">
+  <div class="wrap">
+    <h1 id="page-title">Accessibility</h1>
+    <p class="lede">This site should work for everyone, whatever device or assistive technology you use.</p>
+  </div>
+</section>
+
+<section aria-labelledby="standard">
+  <div class="wrap">
+    <h2 id="standard">What I aim for</h2>
+    <p>I aim to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at Level AA on every page.</p>
+    <ul class="plain-list">
+      <li>Every page works with a keyboard alone, and you can always see where the focus is.</li>
+      <li>Pages have headings, landmarks and a link to skip to the content, for screen readers.</li>
+      <li>Text has strong contrast in light and dark mode, and follows your browser's text size.</li>
+      <li>Pages work at 400% zoom and on a small phone without scrolling sideways.</li>
+      <li>The site follows your settings for dark mode, more contrast, high contrast colours and reduced motion.</li>
+      <li>Every form field has a visible label, and buttons and links are at least 44 pixels tall.</li>
+      <li>There are no cookies, trackers, pop-ups or time limits.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="tinted" aria-labelledby="tested">
+  <div class="wrap">
+    <h2 id="tested">How it was tested</h2>
+    <p>I last reviewed the site on 27 November 2026. Every page was checked with the axe-core testing tool in light and dark mode, at desktop and phone widths, and by keyboard.</p>
+    <p>Automated tools only find some problems. The site has not yet been tested by people who use a screen reader or voice control every day, so there may be issues I haven't found.</p>
+    <h3>Things to know</h3>
+    <ul class="plain-list">
+      <li>The forms open a draft in your email app. If no email app opens, your answers appear on the page so you can copy them into any email service.</li>
+      <li>Long answers in the forms are limited to 600 characters. If you need more room, just email me.</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="report">
+  <div class="wrap">
+    <h2 id="report">Tell me about a problem</h2>
+    <p>If something on this site doesn't work for you, please tell me. Say which page it was and what you were using, and I'll fix it.</p>
+    <div class="actions"><a class="button" href="mailto:hello@robinkanatzar.com?subject=Accessibility%20problem%20on%20techconferencespeaker.com">Email hello@robinkanatzar.com<span class="sr-only"> (opens your email app)</span></a></div>
+    <p style="margin-top:1.5rem">You don't need the forms to take part. You can ask for a mentor, volunteer or ask about a program by writing to the same address.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/accessibility/">Accessibility</a></li>
+      <li><a href="mailto:hello@robinkanatzar.com">Contact<span class="sr-only"> (opens your email app)</span></a></li>
+    </ul>
+    <p>© 2026 Robin Kanatzar. This site uses no cookies and no trackers. Typeface: Atkinson Hyperlegible Next, by the Braille Institute.</p>
+  </div>
+</footer>
+</body>
+</html>

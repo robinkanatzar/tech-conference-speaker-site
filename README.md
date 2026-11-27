@@ -11,6 +11,7 @@ Plain HTML, no build step. Every page uses `styles.css` and `fonts/`.
 | Be a mentor | `/mentors/` | form for volunteer mentors |
 | For conferences | `/conferences/` | form for organizers who want a mentoring program for their first-time speakers |
 | About | `/about/` | Robin, the Tech Talks book, contact links |
+| Accessibility | `/accessibility/` | accessibility statement: the standard, how it was tested (update the review date after each check), how to report a problem |
 
 ## How the forms work
 
